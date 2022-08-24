@@ -22,9 +22,22 @@ android {
     }
 
     buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            applicationIdSuffix ".debug"
+            versionNameSuffix = " - Desenvolvimento"
+
+            buildConfigField("String", "API_URL", apiUrl)
+            buildConfigField("String", "API_KEY", apiKey)
+        }
+
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            buildConfigField("String", "API_URL", apiUrl)
+            buildConfigField("String", "API_KEY", apiKey)
         }
     }
 
