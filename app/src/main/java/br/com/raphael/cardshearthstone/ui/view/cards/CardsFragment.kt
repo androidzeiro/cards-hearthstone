@@ -3,6 +3,7 @@ package br.com.raphael.cardshearthstone.ui.view.cards
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearSnapHelper
 import br.com.raphael.cardshearthstone.data.model.dto.State
 import br.com.raphael.cardshearthstone.data.model.response.CardResponse
@@ -24,7 +25,6 @@ class CardsFragment : BaseFragment<FragmentCardsBinding>(FragmentCardsBinding::i
         super.onViewCreated(view, savedInstanceState)
         setupViews()
         setupObservers()
-        cardsViewModel.getCards()
     }
 
     private fun setupViews() {
@@ -47,6 +47,6 @@ class CardsFragment : BaseFragment<FragmentCardsBinding>(FragmentCardsBinding::i
     }
 
     private fun onCardClicked(card: CardResponse) {
-        println(card)
+        findNavController().navigate(CardsFragmentDirections.actionCardsFragmentToDetailsFragment(card))
     }
 }

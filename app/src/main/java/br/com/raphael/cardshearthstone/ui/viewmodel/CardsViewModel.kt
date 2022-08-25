@@ -17,6 +17,10 @@ class CardsViewModel @Inject constructor(
     private val cardsRepository: CardsRepository
 ) : ViewModel() {
 
+    init {
+        getCards()
+    }
+
     private val _cardsState = MutableLiveData<State<List<CardResponse>>>()
     val cardsState: LiveData<State<List<CardResponse>>> = _cardsState
 

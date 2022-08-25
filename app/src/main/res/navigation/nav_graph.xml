@@ -21,5 +21,11 @@
         android:id="@+id/detailsFragment"
         android:name="br.com.raphael.cardshearthstone.ui.view.details.DetailsFragment"
         android:label="fragment_details"
-        tools:layout="@layout/fragment_details" />
+        tools:layout="@layout/fragment_details" >
+
+        <argument
+            android:name="card"
+            app:argType="br.com.raphael.cardshearthstone.data.model.response.CardResponse" />
+    </fragment>
+
 </navigation>
