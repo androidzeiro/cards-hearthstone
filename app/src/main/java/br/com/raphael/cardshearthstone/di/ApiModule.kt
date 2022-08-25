@@ -1,6 +1,7 @@
 package br.com.raphael.cardshearthstone.di
 
 import br.com.raphael.cardshearthstone.BuildConfig
+import br.com.raphael.cardshearthstone.data.remote.ApiCards
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
@@ -76,5 +77,11 @@ class ApiModule {
             .client(okHttpClient)
             .addConverterFactory(MoshiConverterFactory.create(moshi))
             .build()
+    }
+
+    @Singleton
+    @Provides
+    fun provideApiCards(retrofit: Retrofit): ApiCards {
+        return retrofit.create(ApiCards::class.java)
     }
 }

@@ -1,6 +1,6 @@
 package br.com.raphael.cardshearthstone.data.model
 
-data class Card(
+data class CardResponse(
     val cardId: String,
     val img: String,
     val name: String,
