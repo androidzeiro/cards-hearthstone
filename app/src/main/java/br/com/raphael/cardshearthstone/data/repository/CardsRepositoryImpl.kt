@@ -1,10 +1,10 @@
 package br.com.raphael.cardshearthstone.data.repository
 
 import android.content.Context
-import br.com.raphael.cardshearthstone.data.model.CardResponse
+import br.com.raphael.cardshearthstone.data.model.response.CardResponse
 import br.com.raphael.cardshearthstone.data.remote.CardsApi
 import br.com.raphael.cardshearthstone.data.remote.FlowApiCall
-import br.com.raphael.cardshearthstone.data.remote.Result
+import br.com.raphael.cardshearthstone.data.model.dto.Result
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow

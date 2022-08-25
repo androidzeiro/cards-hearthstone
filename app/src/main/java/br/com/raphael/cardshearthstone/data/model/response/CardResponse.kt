@@ -1,4 +1,4 @@
-package br.com.raphael.cardshearthstone.data.model
+package br.com.raphael.cardshearthstone.data.model.response
 
 data class CardResponse(
     val cardId: String,

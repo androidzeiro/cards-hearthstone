@@ -2,7 +2,8 @@ package br.com.raphael.cardshearthstone.data.remote
 
 import android.content.Context
 import br.com.raphael.cardshearthstone.R
-import br.com.raphael.cardshearthstone.data.model.ErrorResponse
+import br.com.raphael.cardshearthstone.data.model.response.ErrorResponse
+import br.com.raphael.cardshearthstone.data.model.dto.Result
 import br.com.raphael.cardshearthstone.di.ApiModule
 import br.com.raphael.cardshearthstone.util.extension.isInternetAvailable
 import kotlinx.coroutines.flow.FlowCollector

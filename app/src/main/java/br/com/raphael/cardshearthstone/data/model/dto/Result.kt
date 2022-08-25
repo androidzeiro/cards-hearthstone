@@ -1,4 +1,4 @@
-package br.com.raphael.cardshearthstone.data.remote
+package br.com.raphael.cardshearthstone.data.model.dto
 
 sealed class Result<out T> {
     data class Success<out T>(val value: T, val statusCode: Int) : Result<T>()
