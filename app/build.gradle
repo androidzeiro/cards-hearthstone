@@ -30,6 +30,7 @@ android {
 
             buildConfigField("String", "API_URL", apiUrl)
             buildConfigField("String", "API_KEY", apiKey)
+            buildConfigField("String", "API_HOST", apiHost)
         }
 
         release {
@@ -38,6 +39,7 @@ android {
 
             buildConfigField("String", "API_URL", apiUrl)
             buildConfigField("String", "API_KEY", apiKey)
+            buildConfigField("String", "API_HOST", apiHost)
         }
     }
 
