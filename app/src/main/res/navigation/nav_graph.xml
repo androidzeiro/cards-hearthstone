@@ -10,5 +10,16 @@
         android:id="@+id/cardsFragment"
         android:name="br.com.raphael.cardshearthstone.ui.view.cards.CardsFragment"
         android:label="fragment_cards"
-        tools:layout="@layout/fragment_cards" />
+        tools:layout="@layout/fragment_cards" >
+
+        <action
+            android:id="@+id/action_cardsFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="br.com.raphael.cardshearthstone.ui.view.details.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
 </navigation>
