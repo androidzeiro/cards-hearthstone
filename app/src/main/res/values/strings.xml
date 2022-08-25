@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">CardsHearthstone</string>
+    <string name="app_name">Cards Hearthstone</string>
+
+    <string name="error_generic_message">Ops! Algo deu errado.</string>
+    <string name="error_unauthorized_message">Não autorizado.</string>
+    <string name="error_not_found">Não encontrado.</string>
+    <string name="error_network">Sem conexão com a Internet.\nTente novamente.</string>
 </resources>
