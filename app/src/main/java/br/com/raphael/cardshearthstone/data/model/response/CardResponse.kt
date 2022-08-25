@@ -1,5 +1,9 @@
 package br.com.raphael.cardshearthstone.data.model.response
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 data class CardResponse(
     val cardId: String,
     val img: String?,
@@ -13,4 +17,4 @@ data class CardResponse(
     val attack: Int?,
     val cost: Int?,
     val health: Int?
-)
+) : Parcelable
