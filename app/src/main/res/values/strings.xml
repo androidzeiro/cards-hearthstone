@@ -7,4 +7,13 @@
     <string name="error_network">Sem conexão com a Internet.\nTente novamente.</string>
 
     <string name="try_again">Tentar novamente</string>
+
+    <string name="details">Detalhes</string>
+    <string name="card_set">Set: %s</string>
+    <string name="type">Tipo: %s</string>
+    <string name="faction">Facção: %s</string>
+    <string name="rarity">Raridade: %s</string>
+    <string name="attack">Ataque: %d</string>
+    <string name="cost">Custo: %d</string>
+    <string name="health">Vida: %d</string>
 </resources>
