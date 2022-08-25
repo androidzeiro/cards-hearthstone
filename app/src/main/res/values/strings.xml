@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Cards Hearthstone</string>
+    <string name="app_name">Cartas Hearthstone</string>
 
     <string name="error_generic_message">Ops! Algo deu errado.</string>
     <string name="error_unauthorized_message">Não autorizado.</string>
