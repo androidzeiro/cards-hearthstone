@@ -5,4 +5,6 @@
     <string name="error_unauthorized_message">Não autorizado.</string>
     <string name="error_not_found">Não encontrado.</string>
     <string name="error_network">Sem conexão com a Internet.\nTente novamente.</string>
+
+    <string name="try_again">Tentar novamente</string>
 </resources>
