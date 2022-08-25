@@ -4,7 +4,7 @@ import br.com.raphael.cardshearthstone.data.model.CardResponse
 import retrofit2.Response
 import retrofit2.http.GET
 
-interface ApiCards {
+interface CardsApi {
 
     @GET("cards/sets/Classic?attack=4&locale=ptBR")
     suspend fun getCards(): Response<List<CardResponse>>
